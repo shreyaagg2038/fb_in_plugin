@@ -21,7 +21,6 @@
 #include <fluent-bit/flb_config.h>
 #include <fluent-bit/flb_pack.h>
 #include <msgpack.h>
-
 #include <stdio.h>
 #include <string.h>
 #include <sys/types.h>
@@ -34,9 +33,9 @@
 #include <stdlib.h>
 #include <limits.h>
 #include <dirent.h>
-
 #include "in_proc.h"
 
+// mapping of the values obtained by the process in the format specified by linux 
 struct flb_in_proc_mem_offset mem_linux[] = {
     {
         "Peak",
